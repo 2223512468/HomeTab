@@ -1,0 +1,77 @@
+<android.support.v4.app.FragmentTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="0.0"  
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/header_more_list"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_index"
+                    style="@style/maintabt"
+                    android:drawableTop="@drawable/icon_1_n"
+                    android:text="首页" />
+
+                <RadioButton
+                    android:id="@+id/radio_monotor"
+                    style="@style/maintabt"
+                    android:drawableTop="@drawable/icon_0_n"
+                    android:text="实时监控" />
+
+                <RadioButton
+                    android:id="@+id/radio_solution"
+                    style="@style/maintabt"
+                    android:drawableTop="@drawable/icon_2_n"
+                    android:text="在线解答" />
+
+                <RadioButton
+                    android:id="@+id/radio_expertOnline"
+                    style="@style/maintabt"
+                    android:drawableTop="@drawable/icon_3_n"
+                    android:text="专家在线" />
+
+                <RadioButton
+                    android:id="@+id/radio_query"
+                    style="@style/maintabt"
+                    android:drawableTop="@drawable/icon_4_n"
+                    android:text="搜索" />
+                
+                <RadioButton
+                    android:id="@+id/radio_more"
+                    style="@style/maintabt"
+                    android:drawableTop="@drawable/icon_5_n"
+                    android:text="更多" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v4.app.FragmentTabHost>
